@@ -1,0 +1,318 @@
+//  Sway animation start here ***
+@keyframes sway {
+	0% {
+		transform: translateX(-20px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+.sway__animation {
+	animation: sway 3s linear infinite alternate;
+}
+
+@keyframes swayX {
+	0% {
+		transform: translateX(20px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+.sway__animationX {
+	animation: swayX 3s linear infinite alternate;
+}
+
+@keyframes footer__shadow {
+	0% {
+		margin-left: -200px;
+	}
+	100% {
+		margin-right: -200px;
+	}
+}
+@keyframes sway_Y {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(20px);
+	}
+}
+.sway_Y__animation {
+	animation: sway_Y 3s linear infinite alternate;
+}
+@keyframes sway_YY {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(-20px);
+	}
+}
+.sway_Y__animationY {
+	animation: sway_YY 3s linear infinite alternate;
+}
+//  Sway animation end here ***
+
+// Animation rotate area start here ***
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.animation__rotate {
+	animation: rotate 40s linear infinite;
+}
+@keyframes rotateY {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+.animation__rotateY {
+	animation: rotateY 40s linear infinite;
+}
+// Animation rotate area end here ***
+
+//  Bobble animation start here ***
+@keyframes bobble {
+	0% {
+		transform: translateY(0) scale(1);
+	}
+	100% {
+		transform: translateY(-20px) scale(1.1);
+	}
+}
+.bobble__animation {
+	animation: bobble 3s ease-in-out infinite alternate;
+}
+//  Bobble animation end here ***
+
+//  Animation of the video button area start here ***
+@-webkit-keyframes video-animation {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.5);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2);
+	}
+}
+
+@keyframes video-animation {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.5);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2);
+	}
+}
+//  Animation of the video button end here ***
+.process-card {
+    &-area {
+        position: relative;
+
+        .process-line {
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .position-top {
+            top: 42px;
+            bottom: unset;
+        }
+    }
+
+    &-wrap {
+        padding: 30px 0 0 30px;
+
+        &:has(.pulse) {
+            padding: 0 12px;
+
+            &:nth-child(even) {
+                padding-top: 60px;
+            }
+        }
+    }
+
+    position: relative;
+    box-shadow: 0px 10px 15px rgba(8, 14, 28, 0.06);
+    border-radius: 10px;
+    background-color: $white-color;
+    text-align: center;
+    padding: 30px 20px;
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:has(.pulse) {
+        margin-top: 52px;
+    }
+
+    .box-title {
+        font-weight: 600;
+        margin-bottom: 14px;
+    }
+
+    &_number,
+    .pulse {
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        background-color: $theme-color;
+        border-radius: 50%;
+        text-align: center;
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        z-index: 2;
+        font-size: 36px;
+        font-weight: 700;
+        color: $white-color;
+
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: $theme-color;
+            @extend .ripple-animation;
+            z-index: -1;
+            border-radius: 50%;
+            transition: all ease 0.4s;
+        }
+
+        &:after {
+            animation-delay: 2s;
+        }
+    }
+
+    .pulse {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: -52px;
+        left: calc(50% - 8px);
+
+        &:before,
+        &:after {
+            animation-name: ripple2;
+        }
+    }
+
+    &_icon {
+        margin-bottom: 24px;
+    }
+
+    &_text {
+        margin-bottom: -0.53em;
+        font-size: 14px;
+    }
+}
+
+@include lg {
+    .process-card {
+        &-area {
+            .process-line {
+                display: none;
+            }
+        }
+
+        &-wrap {
+            &:has(.pulse) {
+                &:nth-child(even) {
+                    padding-top: 30px;
+                }
+            }
+        }
+
+        &:has(.pulse) {
+            margin-top: 8px;
+        }
+
+        .pulse {
+            top: -8px;
+        }
+    }
+}
+
+@include xs {
+    .process-card {
+        &-wrap {
+            &:has(.pulse) {
+                &:nth-child(even) {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+}
+.process-card_number {
+    background: transparent;
+    width: auto;
+    height: auto;
+    left: auto;
+    right: 0;
+    color: $title-color;
+    opacity: 0.06;
+    font-size: 230px;
+    font-weight: 800;
+    line-height: 1;
+    top: -50px;
+
+    &:after,
+    &:before {
+        display: none;
+    }
+}
+
+.process-card_text {
+    font-size: 16px;
+    margin-bottom: 13px;
+}
+
+&:hover {
+    .process-card_icon {
+        img {
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+/* testi 12 start  ABout Mission & vision ---------------------*/
+.testi-area12 {
+    position: relative;
+    border-radius: 30px;
+    z-index: 2;
+
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 30px;
+        background: rgba(28, 28, 37, 0.9);
+        z-index: -1;
+    }
+
+}
+
+.slider-area {
+    position: relative;
+}
+  
