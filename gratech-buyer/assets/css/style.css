@@ -3346,6 +3346,12 @@ overflow: hidden;
   top: 80px;
   z-index: -1;
 }
+.service__shape1{
+  position: absolute;
+  right: 0px;
+  top: 80px;
+  z-index: -1;
+}
 .service__icon {
   width: 70px;
   height: 70px;
@@ -3730,22 +3736,23 @@ padding-top:5px;
   flex-wrap: wrap;
 }
 .mission-col {
-  background: linear-gradient(180deg, #0000001f -10.59%, #000000a9 300.59%);
+  background: linear-gradient(180deg, #00000056 -10.59%, #00000056 300.59%);
   margin: 20px 35px;
   padding: 15px;
   border-radius: 8px;
   flex: 1 1 300px;
   max-width: 420px;
-  border: 1px solid rgba(245, 245, 220, 0.623);
+ 
 }
 .mission-col img{
   width: 70px;
   margin-left: 20px;
 }
 .mission-col:hover {
-  background: linear-gradient(180deg, #4275a577 -10.59%, #00000091 300.59%);
+  background: linear-gradient(180deg, #0000003b -10.59%, #5280C1 300.59%);
   transform: translateY(-10px); 
   transition: transform 0.4s;
+  border: none;
 }
 
 .mission-col h3 {
@@ -9174,3 +9181,25 @@ color: #5280C1;
  .job-offer span{
   color: #5280C1;
  }
+
+ 
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.canvas {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+ 
+
+@media (max-width: 768px) {
+  #particles-js {
+    min-height: 2120px;
+  }
+}
