@@ -5377,7 +5377,9 @@ position: relative;
  .solutions .col-7{
   padding: 0px 20px;
  }
- 
+.solutions .btn-one{
+margin-top: 65px;
+}
 .content {
   width: 75%;
   padding:20px;
