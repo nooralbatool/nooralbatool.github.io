@@ -2063,6 +2063,7 @@ html{
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 8px;
+  z-index: 10000000;
 }
 
 .btn-one i {
@@ -3224,25 +3225,9 @@ border-radius: 50px;
   overflow: hidden;
   z-index: 1;
   text-transform: capitalize;
+  background-color: #002b98;
 }
-.banner__inner-page .shape1 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-}
-.banner__inner-page .shape2 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-}
-.banner__inner-page .shape3 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
+
 .banner__inner-page::before {
   background: linear-gradient(270.07deg, #002b98 0.07%, #00060c 99.95%);
   z-index: -1;
@@ -3256,10 +3241,23 @@ border-radius: 50px;
 .banner__inner-page h2 {
   margin-bottom: 10px;
   color: var(--white);
+  font-size:65px;
 }
-.banner__inner-page span {
+.title-details h2{
+  font-size:45px;
+}
+.banner__inner-page p{
+  width:900px;
+   padding: 15px 10px;
+   line-height: 35px;
+}
+.banner__inner-page .breadcrumb-list {
   color: var(--white);
   font-weight: 500;
+  padding: 0px 15px;
+}
+.banner__inner-page span   {
+  color: var(--white);
 }
 .banner__inner-page span i {
   color: var(--white);
@@ -9189,7 +9187,7 @@ color: #5280C1;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 100;
 }
 
 .canvas {
