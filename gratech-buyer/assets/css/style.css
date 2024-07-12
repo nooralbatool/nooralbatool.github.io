@@ -6422,7 +6422,13 @@ width: 135px;  }
 }
 @media (max-width:385px) {
   .coverae-img img{
-    max-width: 340px;
+    max-width: 330px;
+  }
+}
+
+@media (max-width:350px) {
+  .coverae-img img{
+    max-width: 290px;
   }
 }
 .team-area {
