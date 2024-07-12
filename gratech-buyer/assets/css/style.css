@@ -4793,8 +4793,8 @@ padding-top:5px;
   box-shadow: var(--shadow);/***employee**/
   width: 228px;
   position: absolute;
-  top:60%;
-  left: 10px;
+  top:55%;
+  left:-10px;
   background-color: var(--white);
   border-radius: 8px;
 
@@ -4804,7 +4804,7 @@ padding-top:5px;
   box-shadow: var(--shadow);/**location**/
   width: 208px;
   position: absolute;
-  top:82%;
+  top:95%;
   left:260px;
   background-color: var(--white);
   border-radius: 8px;
@@ -4814,8 +4814,8 @@ padding-top:5px;
   box-shadow: var(--shadow);/**years**/
   width: 208px;
   position: absolute;
-  top:58%;
-  left:250px;
+  top:65%;
+  left:320px;
   background-color:#8b8b8b;
   border-radius: 8px;
 }
@@ -5700,7 +5700,7 @@ position: relative;
 }
  
 .container-brand p{
- margin: 0px  250px 20px 10px;
+ margin: 10px;
   font-size:18px;
  
 }
@@ -5722,7 +5722,7 @@ position: relative;
 }
 .solutions  img{
  width: 650px; 
- 
+ height: 45vh;
 } 
 .solutions .ph1{
   border-radius: 20px;
@@ -5774,6 +5774,22 @@ right: 0;
  width: 90%;
  
 }
+@media (max-width:500px) {
+  .brand__shape{
+opacity: 0;
+   }
+   
+   .brand__shape_top{
+  
+     opacity: 0;
+   }
+   .brand__image p{
+display: none;
+   }
+   .service-three__shape {
+display: none;
+   }
+}
  .swiper-wrapper{
   margin-bottom: 70px;
  }
@@ -5818,10 +5834,14 @@ opacity: 1;
 width: 135px;  }
 }
 @media (max-width: 575px) {
+  .brand__image{
+    height: 120px;
+    
+  }
   .brand__image img{
     width: 130px;
-    margin-left: 10PX;
-    margin-right: 10PX;
+    
+     
 }
 }
 .brand__image p{
@@ -7261,17 +7281,7 @@ opacity: 0.7;
   opacity: 0.8;
  }
 
- .con h4{
 
-  color: #5280C1;
-  text-transform: uppercase;
-  position: absolute;
-  top:130px;
-  left: 60px;
-  line-height: 1;
-  font-weight: bold;
- padding: 15px 0px;
-}
 
 .testimonial-three__item p{
   font-size: 17px;
@@ -7284,7 +7294,59 @@ opacity: 0.7;
 .service-card:hover .service-card_number{
   color: white;
 }
+.con h4{
+  font-size:25px;
+    color: #5280C1;
+    text-transform: uppercase;
+    position: absolute;
+    top:130px;
+    left: 60px;
+    line-height: 1;
+    font-weight: bold;
+   padding: 15px 0px;
+  }
+/* Responsive Design */
+@media (max-width: 900px) {
+  .testimonial-three-area .section-header h2{
+font-size:45px;
+  }
 
+  .service-card_number {
+    font-size:65px;
+  }
+  .con img{
+    min-width:80px;
+  }
+.con h4{
+  font-size:18px;
+}
+.testimonial-three__item p{
+  font-size: 13px;
+}
+}
+/* Responsive Design */
+@media (max-width: 500px) {
+  .testimonial-three-area .section-header h2{
+font-size:35px;
+  }
+
+  .service-card_number {
+    font-size:55px;
+  }
+  .con img{
+    min-width:70px;
+  }
+.con h4{
+  font-size:15px;
+}
+.testimonial-three__item p{
+  font-size:13px;
+  padding: 5px;
+}
+
+}
+
+ 
 .service-card_text {
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
@@ -7970,60 +8032,40 @@ text-wrap: wrap;
   margin-top: -25px;
 }
 
+
+
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   #chatbot-popup {
-      bottom: 20px;
-      right: 10px;
-      width: 90%;
-      height: 70%;
+    display: none;
   }
 
-  #chatbot-header, #chatbot-footer {
-      padding: 5px;
+  #chatbot-notification {
+    display: block;
+    background-color: #00000000;
+    box-shadow: none;
   }
-
-  .close-popup {
-      font-size: 20px;
-  }
-
-  #user-input {
-      padding: 5px;
-      margin-right: 5px;
-  }
-
-  #send-btn {
-      width: 30px;
-      height: 30px;
-  }
+#chatbot-notification-text{
+  display: none;
 }
-
-@media (max-width: 480px) {
-  #chatbot-popup {
-      bottom: 10px;
-      right: 5px;
-      width: 95%;
-      height: 80%;
-  }
-
-  #chatbot-header, #chatbot-footer {
-      padding: 5px;
-  }
-
-  .close-popup {
-      font-size: 20px;
-  }
-
-  #user-input {
-      padding: 5px;
-      margin-right: 5px;
-  }
-
-  #send-btn {
-      width: 30px;
-      height: 30px;
-  }
+#chatbot-notification-content img{
+  display: none;
 }
+  #chatbot-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  #chatbot-icon i {
+    font-size: 30px;
+  } }
 /********Form **********/
 .footer-CTA {
   background-position: 100%;
