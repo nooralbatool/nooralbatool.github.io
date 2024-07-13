@@ -5577,6 +5577,17 @@ width: 120%;
   overflow: hidden;
   z-index: 1;
 }
+.offer__item {
+  padding: 10px; /* تعديل padding إذا لزم الأمر */
+  text-align: center;
+}
+.offer__item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
 .offer__shadow {
   position: absolute;
   position: absolute;
@@ -5625,11 +5636,7 @@ width: 120%;
   }
 }
 
-.offer__item img{
-  height:80px;
-  max-width: 175px;
-
-}
+ 
 @media (max-width:1880px) {
   .offer__item img{
 width: 145px;  
