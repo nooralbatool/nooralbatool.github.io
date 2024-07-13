@@ -109,7 +109,9 @@ body {
   line-height: 28px;
   font-weight: 400;
 }
-
+img{
+  object-fit: cover;
+}
 h1,
 h2,
 h3,
@@ -5774,14 +5776,13 @@ right: 0;
  width: 90%;
  
 }
-@media (max-width:500px) {
+@media (max-width:600px) {
   .brand__shape{
-opacity: 0;
+display: none;
    }
    
    .brand__shape_top{
-  
-     opacity: 0;
+    display: none;
    }
    .brand__image p{
 display: none;
@@ -6442,13 +6443,13 @@ width: 135px;  }
 }
 @media (max-width:385px) {
   .coverae-img img{
-    max-width: 330px;
+    max-width: 330px !important;
   }
 }
 
 @media (max-width:350px) {
   .coverae-img img{
-    max-width: 290px;
+    max-width: 280px !important;
   }
 }
 .team-area {
@@ -6719,6 +6720,7 @@ width: 135px;  }
 .banner-video__wrp img {
   border-radius:10px;
   height:350px;
+  object-fit: cover;
 }
 .banner-video__wrp p{
   z-index: 10;
