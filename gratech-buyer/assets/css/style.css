@@ -3108,10 +3108,6 @@ width: 100%;
 } 
 
 
-
-
-
-
 .banner__slider .slide-bg {
   position: absolute;
   left: 0;
@@ -3123,7 +3119,7 @@ width: 100%;
   background-position: center center;
   background-size: cover;
   transform: scale(1);
-  transition: all 9s ease-out 0s;
+  transition:all 9s ease-out 0s;
 }
 
 .banner__slider .swiper-slide-active .slide-bg {
@@ -5269,35 +5265,7 @@ width: 120%;
   visibility: visible;
   transform: translate(0);
 }
- 
-.case__slider {
-  margin-left: 19%;
-}
-@media (max-width: 1600px) {
-  .case__slider {
-    margin-left: 12%;
-  }
-}
-@media (max-width: 1399px) {
-  .case__slider {
-    margin-left: 10%;
-  }
-}
-@media (max-width: 991px) {
-  .case__slider {
-    margin-left: 0%;
-    padding: 0 12px;
-  }
-}
-/*.case__slider   .case__item .case__btn, .case__slider .swiper-slide.swiper-slide-active .project-three__item .case__btn {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(0);
-}*/
 
-
-
- 
 .case-two-area {
   overflow: hidden;
   position: relative;
@@ -7774,7 +7742,7 @@ Work CSS
 }
 
 
-
+/******call to action  ********/
 .text-background-section {
   position: relative;
   display: flex;
@@ -7841,7 +7809,27 @@ text-wrap: wrap;
 
  }
 
+@media (max-width:960px) {
+  .text-background-section {
+    padding: 50px 0px;
+  }
+  .content-con h1 {
+     font-size: 7rem;
+   }
+   .content-con ::before{
+    top:350px;
+   }
 
+   .content-con  ::after{
+    top:350px;
+   }
+
+   .content-con h2{
+    display: block;
+    font-size: 2rem;
+   line-height:40px;
+  }
+}
 .cta-button {
   margin: 30px 0px;
   padding: 15px 30px;
