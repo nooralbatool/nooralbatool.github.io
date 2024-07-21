@@ -9757,3 +9757,64 @@ color: #5280C1;
     min-height: 2120px;
   }
 }
+
+
+.careerContainer {
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 5px 83px rgba(40, 40, 40, .08);
+}
+
+.careerItem {
+  padding: 40px 38px 30px;
+  box-shadow: 0 5px 83px rgba(40, 40, 40, .08);
+  border-bottom: 1px solid #e7ebef;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+  margin: 20px 0;
+}
+
+.careerMeta {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.careerType {
+  font-size: 13px;
+  text-transform: capitalize;
+  background-color: #222;
+  color: #fff;
+  padding: 3px 10px;
+  margin-right: 20px;
+}
+
+.career__title {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 0;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.career__desc {
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 0;
+  font-weight: 400px;
+  color: #51668a;
+  font-family: Heebo, sans-serif;
+}
+
+.career__location {
+  font-size: 13px;
+  color: #ff5e14;
+  font-weight: 900;
+  font-family: 'Rubik', sans-serif;
+
+}
