@@ -3366,6 +3366,20 @@ width: 100%;
    padding: 15px 10px;
    line-height: 35px;
 }
+
+@media (max-width:750px) {
+  .banner__inner-page h2 {
+    margin-top: 20px;
+   
+    font-size:55px;
+  }
+
+  .banner__inner-page p{
+   font-size: 15px;
+   padding: 15px 0px;
+ 
+  }
+}
 .banner__inner-page .breadcrumb-list {
   color: var(--white);
   font-weight: 500;
@@ -3882,6 +3896,12 @@ padding-top:5px;
   padding: 0px 20px;
   text-align: left;
 }
+
+@media (max-width:800px) {
+  .mission{
+    display: none;
+  }
+}
 /**************
 .testi-area12 {
   position: relative;
@@ -4250,7 +4270,14 @@ padding-top:5px;
 .certified img {
   max-width: 250px;
 }
- 
+ @media (max-width:800px) {
+  .certified .col {
+  width:40%;
+  }
+  .certified img {
+    max-width:120px;
+  }
+ }
 /*******Value********/
  
  
@@ -6870,6 +6897,26 @@ color: #5280C1;
 .contact p {
   font-size: 18px;
 }
+
+
+@media (max-width:991px) {
+  .contact .col{
+    width:90%;
+    margin: 10px;
+  
+
+  }
+
+  .contact  .icon i{
+    font-size: 30px;
+  }
+  .contact h2{
+    font-size:18px;
+  }
+  .contact p {
+    font-size: 15px;
+  }
+}
 .error__item {
   max-width: 860px;
   margin: 0 auto;
@@ -6879,6 +6926,8 @@ color: #5280C1;
   font-size: 64px;
   line-height: 72px;
 }
+
+
 @media (max-width: 991px) {
   .error__item h2 {
     font-size: 40px;
@@ -7047,6 +7096,14 @@ opacity: 0.7;
 }
 .footer-cir img:hover{
   opacity: 1;
+}
+@media (max-width:1000px) {
+  .footer-cir{
+    width:90%;
+  }
+  .footer-cir img{
+    width:120px;
+  }
 }
 .footer__copyright {
   position: relative;
